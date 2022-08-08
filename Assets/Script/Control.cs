@@ -15,8 +15,13 @@ public class Control : MonoBehaviour
     private Vector3 moveForce;
     [SerializeField] float speed;
     [SerializeField] float gravity = 20.0f;
+    [SerializeField] ParticleSystem effect;
+
     void Start()
     {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
         characterControl = GetComponent<CharacterController>();
         
     }
@@ -24,6 +29,11 @@ public class Control : MonoBehaviour
     void Update()
     {
         UpdateRotate(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+
+        if(Input.GetButtonDown("Fire1"))
+        {
+            effect.Play();
+        }
 
         MoveTo
             (
@@ -53,7 +63,7 @@ public class Control : MonoBehaviour
         direction = transform.rotation * new Vector3(direction.x, 0, direction.z);
 
         // direction을 그대로 사용하지 않고, moveForce 변수에 x와 z값만 넣어서 사용합니다
-        moveForce = new Vector3(direction.x * axisspeed, moveForce.y, moveForce.z * speed);
+        moveForce = new Vector3(direction.x * speed, moveForce.y, direction.z * speed);
     }
 
     public void UpdateRotate(float mouseX,float mouseY)
