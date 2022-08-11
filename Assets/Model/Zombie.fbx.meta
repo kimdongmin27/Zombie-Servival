@@ -1,7 +1,7 @@
 fileFormatVersion: 2
-guid: 862827efd69cd3544b9fd01d01d07461
+guid: 3ebe2da89846a664c9039d073556e08a
 ModelImporter:
-  serializedVersion: 21300
+  serializedVersion: 21202
   internalIDToNameTable:
   - first:
       74: -203655887218126122
@@ -11,17 +11,17 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Yakuzombie_diffuse
-    second: {fileID: 2800000, guid: b5a7908d4131ce042b4a2bde7f8e3c8f, type: 3}
+    second: {fileID: 2800000, guid: 430fa4f10f6c2b342a16932bbe84f975, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Yakuzombie_normal
-    second: {fileID: 2800000, guid: 88ab0245ddfa979429502fb02e7f8eee, type: 3}
+    second: {fileID: 2800000, guid: ee9f1898410d9434d94c585c36bbacdf, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Yakuzombie_specular
-    second: {fileID: 2800000, guid: 67becc70e596b6f4188c004185beba27, type: 3}
+    second: {fileID: 2800000, guid: 16c412469bfb1b5418904635dcb6c1ae, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -42,7 +42,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -109,15 +109,14 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
-  remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
