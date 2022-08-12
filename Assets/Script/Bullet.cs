@@ -28,6 +28,9 @@ public class Bullet : MonoBehaviour
              transform.rotation
             );
 
+            other.transform.GetComponentInParent<AIControl>().health -= 20;
+            other.transform.GetComponentInParent<AIControl>().Death();
+
             Destroy(this.gameObject);
         } 
     }
