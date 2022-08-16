@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 038701bbf5bdeeb498e344fb4149e81d
+guid: 0890d881efcebd94d8d3a4cbd55f32ae
 ModelImporter:
-  serializedVersion: 21300
+  serializedVersion: 21202
   internalIDToNameTable:
   - first:
       74: -203655887218126122
+    second: mixamo.com
+  - first:
+      74: 4348485665485846014
     second: Death
   externalObjects: {}
   materials:
@@ -877,7 +880,6 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
-  remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

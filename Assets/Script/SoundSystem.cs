@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SoundSystem : MonoBehaviour
@@ -8,6 +6,7 @@ public class SoundSystem : MonoBehaviour
     [SerializeField] AudioClip [ ] clip;
 
     public static SoundSystem instance;
+
     void Start()
     {
         if(instance == null)
@@ -20,6 +19,6 @@ public class SoundSystem : MonoBehaviour
 
     public void Sound(int number)
     {
-        audioSource.PlayOneShot(clip[number]) ;
+        audioSource.PlayOneShot(clip[number]);
     }
 }
