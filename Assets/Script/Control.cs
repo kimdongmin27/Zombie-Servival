@@ -43,15 +43,31 @@ public class Control : MonoBehaviour
         // 바닥과 충돌하지 않았다면
         if(characterControl.isGrounded == false)
         {
+            // 중력을 작용하도록
             moveForce.y -= gravity * Time.deltaTime;
-        }
-        else
-        {
-            moveForce.y = 0.1f;
         }
 
         characterControl.Move(moveForce * Time.deltaTime);
+
+        Jump();
     }
+
+    public void Jump()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            // 바닥과 충돌한 상태라면
+            if(characterControl.isGrounded)
+            {
+                // 점프를 할 수 있도록 설정합니다.
+                moveForce.y = 7.5f;
+            }
+            
+            
+        }
+
+    }
+
 
     public void MoveTo(Vector3 direction)
     {
@@ -114,6 +130,8 @@ public class Control : MonoBehaviour
 
             hit.collider.GetComponentInParent<AIControl>().health -= 20;
             hit.collider.GetComponentInParent<AIControl>().Death();
+
+            Instantiate(effect,hit.transform.position,hit.transform.rotation);
         }
     }
 
