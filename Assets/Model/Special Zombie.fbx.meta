@@ -1,7 +1,7 @@
 fileFormatVersion: 2
-guid: 83c8423745e577d4f9a81c44baf5f467
+guid: 92ef5edd915e30442827ac4158504188
 ModelImporter:
-  serializedVersion: 21300
+  serializedVersion: 21202
   internalIDToNameTable:
   - first:
       74: -203655887218126122
@@ -11,17 +11,17 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: parasiteZombie_diffuse
-    second: {fileID: 2800000, guid: a1265d0ab4a9dc542ab79c88363613d2, type: 3}
+    second: {fileID: 2800000, guid: fdb25e8e5125c4047ae9605faa2d2cb9, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: parasiteZombie_normal
-    second: {fileID: 2800000, guid: c1857eb257837a044adb37784f374c69, type: 3}
+    second: {fileID: 2800000, guid: 38a92aa359d7dc2408a7fd28a6223317, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: parasiteZombie_specular
-    second: {fileID: 2800000, guid: 0041cf88e6b123b45838fbb076311dfc, type: 3}
+    second: {fileID: 2800000, guid: b9bd1863b67ae5048948e779c4747c97, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -117,7 +117,6 @@ ModelImporter:
   humanoidOversampling: 1
   avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
-  remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
